@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf8" />
+		<script type="text/javascript" src="levels.js"></script>
+		<script type="text/javascript" src="engine.js"></script>
+		<style>
+			.clear {
+				clear: both;
+			}
+			.headerContainer {
+				width: 100%;
+				height: 50px;
+				text-align: center;
+				background-color: lightGray;
+				border: blue 1px solid;
+			}
+			.container {
+				margin: 0 auto;
+			}
+			.arrowsContainer {
+				max-width: 300px;
+				height: 80px;
+			}
+			.button {
+				width: 35px;
+				height: 30px;
+				float: left;
+				margin-left: 5px;
+				margin-top: 5px;
+				border: 1px blue solid;
+				border-radius: 15px;
+				padding-top: 5px;
+			}
+			
+			.button:hover {
+				background-color: darkGrey;
+				cursor: pointer;
+			}
+			
+						
+			.levelBox {
+				position: relative;
+				z-index: 10;
+				width: 100px;
+				height: 100px;
+				margin: 5px 10px;
+				float: left;
+				border: black 2px solid;
+				border-radius: 15px;
+			}
+			.levelWall {
+				background-color: grey;
+			}
+			.levelActive {
+				background-color: cyan;
+			}
+			.levelGoal {
+				background-color: red;
+			}
+			#actionHolder {
+				width: 100%;
+				height: 50px;
+				margin: 10px 0;
+				background-color: darkGreen;
+			}
+			.levelRender {
+				width: 920px;
+				height: 600px;
+				background-color: lightGray;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="headerContainer">
+			<div class="container arrowsContainer">
+				<div id="buttonLeft" class="button arrowLeft">&larr;</div>
+				<div id="buttonUp" class="button arrowUp">&uarr;</div>
+				<div id="buttonRight" class="button arrowRight">&rarr;</div>
+				<div id="buttonDown" class="button arrowDown">&darr;</div>
+				<div id="buttonRun" class="button run">!</div>
+			</div>
+		</div>
+
+		<div class="gameContent">
+			<div id="actionHolder"></div>
+			<div id="gameContainer" class="container levelRender"><div>
+		</div>
+		
+	</body>
+</html>
